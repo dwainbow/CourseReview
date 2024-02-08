@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFD099;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.CourseSearchController">
+   <children>
+      <TableView fx:id="table" layoutY="143.0" prefHeight="257.0" prefWidth="602.0">
+        <columns>
+          <TableColumn fx:id="subjectColumn" prefWidth="64.0" text="Subject" />
+            <TableColumn fx:id="numColumn" prefWidth="128.0" text="Course Number" />
+          <TableColumn fx:id="titleColumn" minWidth="9.0" prefWidth="291.0" text="Course Title" />
+            <TableColumn fx:id="ratingColumn" prefWidth="118.0" text="Avg Rating" />
+        </columns>
+      </TableView>
+      <TextField fx:id="subject" layoutX="19.0" layoutY="73.0" promptText="Subject" />
+      <TextField fx:id="courseNum" layoutX="227.0" layoutY="73.0" promptText="Course Number" />
+      <TextField fx:id="courseTitle" layoutX="426.0" layoutY="73.0" promptText="Course Title" />
+      <Button fx:id="search" layoutX="19.0" layoutY="111.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: FF9209;" text="Search" />
+      <Button fx:id="addCourse" layoutX="504.0" layoutY="111.0" mnemonicParsing="false" onAction="#addCourse" style="-fx-background-color: FF9209;" text="Add Course" />
+      <Button fx:id="logout" layoutX="534.0" layoutY="15.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: FF9209;" text="Logout" />
+      <Button fx:id="myReviews" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#myReviews" style="-fx-background-color: FF9209;" text="My Reviews" />
+      <Label fx:id="resultsDisplay" layoutX="99.0" layoutY="116.0" prefHeight="17.0" prefWidth="344.0" text="Label" />
+      <Text fill="#2b3499" layoutX="248.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="course search">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

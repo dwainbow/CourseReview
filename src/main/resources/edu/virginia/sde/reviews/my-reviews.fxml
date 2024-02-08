@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFD099;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.MyReviewsController">
+    <children>
+        <TableView fx:id="table" layoutY="92.0" prefHeight="308.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="courseNumberColumn" prefWidth="71.0" text="Subject" />
+                <TableColumn fx:id="courseTitleColumn" prefWidth="107.0" text="Course Number" />
+                <TableColumn fx:id="subjectColumn" prefWidth="91.0" text="Title" />
+                <TableColumn fx:id="courseRatingColumn" prefWidth="95.0" text="Rating" />
+                <TableColumn fx:id="courseReviewComment" prefWidth="235.0" text="Comment" />
+            </columns>
+        </TableView>
+        <Button fx:id="backButton" layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: FF9209;" text="Back" />
+        <Text fill="#2b3499" layoutX="255.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="my reviews" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Text>
+    </children>
+</AnchorPane>

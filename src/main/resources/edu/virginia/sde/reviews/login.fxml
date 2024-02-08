@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFD099;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.LoginController">
+   <children>
+      <TextField fx:id="userNameField" layoutX="218.0" layoutY="175.0" promptText="Username" />
+      <PasswordField fx:id="passwordField" layoutX="220.0" layoutY="217.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="269.0" layoutY="263.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: FF9209;" text="Login" />
+      <Button fx:id="createUserButton" layoutX="230.0" layoutY="303.0" mnemonicParsing="false" onAction="#addNewUserScene" style="-fx-background-color: FF9209;" text="Create New Account" />
+      <Button fx:id="closeButton" layoutX="541.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: FF9209;" text="Close" />
+      <Text fill="#2b3499" layoutX="186.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="uva course review" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

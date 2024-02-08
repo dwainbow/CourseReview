@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFD099;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.AddReviewController">
+   <children>
+      <TextField fx:id="comment" layoutX="213.0" layoutY="229.0" prefHeight="26.0" prefWidth="162.0" promptText="Optional comment" />
+      <TextField fx:id="rating" layoutX="213.0" layoutY="175.0" prefHeight="25.0" prefWidth="162.0" promptText="Rating " />
+      <Label fx:id="resultsDisplay" layoutX="168.0" layoutY="269.0" prefHeight="17.0" prefWidth="251.0" />
+      <Button fx:id="back_from_reviews" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: FF9209;" text="Back" />
+      <Button fx:id="addReview" layoutX="256.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleAddReviewButton" style="-fx-background-color: FF9209;" text="Add Review" />
+      <Text fill="#2b3499" layoutX="257.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="add review">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFD099;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.AddCourseController">
+   <children>
+      <TableView fx:id="table" layoutY="71.0" prefHeight="292.0" prefWidth="600.0" AnchorPane.bottomAnchor="1.0">
+        <columns>
+          <TableColumn fx:id="subjectColumn" prefWidth="95.0" text="Subject" />
+          <TableColumn fx:id="courseNumberColumn" prefWidth="128.0" text="Course Number" />
+            <TableColumn fx:id="courseTitleColumn" prefWidth="376.0" text="Course Title" />
+        </columns>
+      </TableView>
+      <Text layoutX="27.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject" />
+      <TextField fx:id="mnemonicID" layoutX="76.0" layoutY="29.0" prefHeight="26.0" prefWidth="42.0" />
+      <Text layoutX="138.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Number" />
+      <TextField fx:id="courseNumberID" layoutX="231.0" layoutY="29.0" prefHeight="26.0" prefWidth="74.0" />
+      <Text layoutX="323.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+      <TextField fx:id="titleID" layoutX="347.0" layoutY="30.0" prefHeight="26.0" prefWidth="236.0" />
+      <Button fx:id="addButton" layoutX="27.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleAddButton" style="-fx-background-color: FF9209;" text="Add Course" />
+      <Label fx:id="resultsDisplay" layoutX="138.0" layoutY="79.0" prefHeight="17.0" prefWidth="350.0" text="Label" />
+      <Button layoutX="520.0" layoutY="75.0" mnemonicParsing="false" onAction="#courseSearch" style="-fx-background-color: FF9209;" text="Go Back " />
+   </children>
+</AnchorPane>

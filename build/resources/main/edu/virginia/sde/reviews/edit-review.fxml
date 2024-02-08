@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.EditReviewController">
+   <children>
+      <TextField fx:id="Rating" layoutX="220.0" layoutY="138.0" promptText="Rating" />
+      <TextField fx:id="Comment" layoutX="220.0" layoutY="200.0" promptText="Comment" />
+      <Button fx:id="updateReview" layoutX="232.0" layoutY="255.0" onAction="#updateReview" prefHeight="26.0" prefWidth="129.0" text="Edit Review" />
+      <Button fx:id="deleteReview" layoutX="244.0" layoutY="77.0" onAction="#deleteReview" prefHeight="26.0" prefWidth="101.0" text="Delete Review" />
+      <Button fx:id="backButton" layoutX="7.0" layoutY="23.0" onAction="#goBack" prefHeight="32.0" prefWidth="129.0" text="Back" />
+      <Label fx:id="result" layoutX="225.0" layoutY="226.0" prefHeight="17.0" prefWidth="151.0" text="Result" />
+   </children>
+</AnchorPane>

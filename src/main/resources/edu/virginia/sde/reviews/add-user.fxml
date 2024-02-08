@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFD099;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.CreateUserController">
+    <TextField fx:id="new_username" layoutX="220.0" layoutY="175.0" promptText="username" />
+    <TextField fx:id="new_password" layoutX="220.0" layoutY="230.0" promptText="password" />
+    <Label fx:id="create_user_result" layoutX="212.0" layoutY="268.0" textFill="#e11f1f" />
+    <Button fx:id="create_user" layoutX="247.0" layoutY="277.0" onAction="#handleCreateUserButton" style="-fx-background-color: FF9209;" text="Create account" />
+   <Button fx:id="return_to_login" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnToLogin" style="-fx-background-color: FF9209;" text="Return to Login" />
+   <Text fill="#2b3499" layoutX="249.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="add user">
+      <font>
+         <Font name="Georgia" size="24.0" />
+      </font>
+   </Text>
+</AnchorPane>
